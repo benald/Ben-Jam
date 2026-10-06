@@ -1,0 +1,54 @@
+[
+  {
+    "id": "bk-018-original-mix",
+    "title": "Disco Does It",
+    "artist": "B to the J",
+    "coverImage": "/covers/BKR018.jpg",
+    "buyUrl": "https://brainkat.bandcamp.com/track/disco-does-it-original-mix",
+    "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=1654767847/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/transparent=true/",
+    "embedHeight": "442px",
+    "releaseDate": "2013",
+    "tags": ["Original Mix"],
+    "duration": "8:01",
+    "accentColor": "#e99708"
+  },
+  {
+    "id": "bk-018-dub-mix",
+    "title": "Disco Does It (Dub Mix)",
+    "artist": "B to the J",
+    "coverImage": "/covers/BKR018.jpg",
+    "buyUrl": "https://brainkat.bandcamp.com/track/disco-does-it-dub-mix",
+    "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=2587380448/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/transparent=true/",
+    "embedHeight": "442px",
+    "releaseDate": "2013",
+    "tags": ["Dub Mix"],
+    "duration": "8:01",
+    "accentColor": "#e99708"
+  },
+  {
+    "id": "he-thought-she-thought-ben-jam-different-mix",
+    "title": "He thought, She thought (Ben Jam Different mix)",
+    "artist": "Mike Jules & Luke J Sammut",
+    "coverImage": "https://f4.bcbits.com/img/a2396488836_5.jpg",
+    "buyUrl": "https://btothej.bandcamp.com/track/he-thought-she-thought-ben-jam-different-mix",
+    "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=7256235/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/transparent=true/",
+    "embedHeight": "442px",
+    "releaseDate": "2022",
+    "tags": ["Ben Jam Different mix"],
+    "duration": "8:01",
+    "accentColor": "#e99708"
+  },
+  {
+    "id": "passers-by-ben-jam-funky-dub",
+    "title": "Passers by (Ben Jam Funky Dub)",
+    "artist": "Helskanki ft Bliss & Tihanna",
+    "coverImage": "https://f4.bcbits.com/img/a4246151786_5.jpg",
+    "buyUrl": "https://btothej.bandcamp.com/track/passers-by-ben-jam-funky-dub",
+    "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=3078350120/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/transparent=true/",
+    "embedHeight": "442px",
+    "releaseDate": "2022",
+    "tags": ["Ben Jam Funky Dub"],
+    "duration": "6:19",
+    "accentColor": "#e99708"
+  }
+]

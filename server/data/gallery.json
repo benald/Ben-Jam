@@ -1,0 +1,83 @@
+[
+  {
+    "id": "g5",
+    "title": "Voices of House",
+    "meta": "The Harbour Bar \u00b7 30.04.2026",
+    "cover": "/images/flyers/2026_Harbour-Bar_voh.jpeg",
+    "photos": [
+      "/images/profile/ben-jam_voices-of-house_1_2026.jpg",
+      "/images/profile/ben-jam_voices-of-house_2_2026.jpeg",
+      "/images/profile/ben-jam_voices-of-house_3_2026.mp4"
+    ]
+  },
+  {
+    "id": "g4",
+    "title": "Fun at home",
+    "meta": "Various \u00b7 2004+",
+    "cover": "/images/profile/home_perth_2020.jpg",
+    "photos": [
+      "/images/profile/ben-jam_sarah-foote_favouritizm_2001.jpg",
+      "/images/profile/mark-pickering_ben-jam_worldwide-fm_2000.JPG",
+      "/images/profile/lettys-house-party_south-london_1996.jpg",
+      "/images/profile/karl-ben-tash_russel-square-london_1995.png",  
+      "/images/profile/requests-ben-jam_leaving-party_2004.JPG",
+      "/images/profile/ben-jam_crew-buffalo-bar_1998.jpg",
+      "/images/profile/ben-jam_fifi-buffalo-bar_1998.jpg",
+      "/images/profile/ben_mike_kensal_rise.jpg",
+      "/images/profile/ben-jam_leaving-party_2004.JPG",
+      "/images/profile/ben-jam_jeremy-sylvester_nate-dogg_leaving-party_2004.jpg",
+      "/images/profile/another-photo-example.jpg"
+
+    ]
+  },
+  {
+    "id": "g3",
+    "title": "Perth Days",
+    "meta": "Geisha Bar, Niche, Flawless \u00b7 12.10.13",
+    "cover": "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "photos": [
+      "/images/profile/terry-waites_ben-jam_soul-project_2010.jpg",
+      "/images/profile/soul-project_ben-jam.jpg",
+      "/images/profile/ben-jam-geishabar_2012.jpg",
+      "/images/profile/ben-jam-geishabar-2_2012.png",
+      "/images/profile/ben-jam_soul-project.png",
+      "/images/profile/ben-jam_soul-project-3.png",
+      "/images/profile/ben-jam_soul-project-2.png",
+      "/images/profile/ben-jam_soul-project_2009.jpg",
+      "/images/profile/ben-jam_james-a_geishabar.png",
+      "/images/profile/ben-jam_geishabar_2013.png"
+    ]
+  },
+  {
+    "id": "g2",
+    "title": "London Days",
+    "meta": "Various \u00b7 1995 - 2003",
+    "cover": "/images/profile/karl-ben-tash_russel-square-london_1995.png",
+    "photos": [
+      "/images/profile/ben-jam_sarah-foote_favouritizm_2001.jpg",
+      "/images/profile/mark-pickering_ben-jam_worldwide-fm_2000.JPG",
+      "/images/profile/lettys-house-party_south-london_1996.jpg",
+      "/images/profile/karl-ben-tash_russel-square-london_1995.png",  
+      "/images/profile/requests-ben-jam_leaving-party_2004.JPG",
+      "/images/profile/ben-jam_crew-buffalo-bar_1998.jpg",
+      "/images/profile/ben-jam_fifi-buffalo-bar_1998.jpg",
+      "/images/profile/ben_mike_kensal_rise.jpg",
+      "/images/profile/ben-jam_leaving-party_2004.JPG",
+      "/images/profile/ben-jam_jeremy-sylvester_nate-dogg_leaving-party_2004.jpg"
+
+    ]
+  },
+  {
+    "id": "g1",
+    "title": "UK Rave Flyers",
+    "meta": "Various \u00b7 1988 - 1995",
+    "cover": "/images/profile/rave-flyers-4.jpg",
+    "photos": [
+      "/images/profile/rave-flyers-1.jpg",
+      "/images/profile/rave-flyers-2.jpg",
+      "/images/profile/rave-flyers-3.jpg",
+      "/images/profile/rave-flyers-4.jpg"
+
+    ]
+  }
+]

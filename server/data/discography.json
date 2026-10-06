@@ -1,0 +1,42 @@
+[
+  {
+    "id": "bk-dj-04",
+    "title": "Soft Signal / Hard Rain",
+    "artist": "Ben Jam",
+    "coverImage": "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "releaseDate": "2024",
+    "tags": ["EP", "Brain Kat Records"],
+    "tracklist": ["Soft Signal", "Nocturne FM", "Hard Rain", "Switchboard"],
+    "detail": "Four cuts for the soft machinery of the city after midnight."
+  },
+  {
+    "id": "bk-dj-03",
+    "title": "The Static Between",
+    "artist": "Ben Jam",
+    "coverImage": "https://images.pexels.com/photos/713149/pexels-photo-713149.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "releaseDate": "2023",
+    "tags": ["Album", "Brain Kat Records"],
+    "tracklist": ["The Static Between", "Moths at 2AM", "Carrier Tone", "Southbound"],
+    "detail": "A patient album about signal loss, warm machines, and finding the way back."
+  },
+  {
+    "id": "bk-dj-02",
+    "title": "Night Service",
+    "artist": "Ben Jam",
+    "coverImage": "https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "releaseDate": "2022",
+    "tags": ["Single", "Self-released"],
+    "tracklist": ["Night Service"],
+    "detail": "A one-track dispatch from the last carriage home."
+  },
+  {
+    "id": "bk-dj-01",
+    "title": "Frequencies for Empty Rooms",
+    "artist": "Ben Jam",
+    "coverImage": "https://images.pexels.com/photos/164829/pexels-photo-164829.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "releaseDate": "2020",
+    "tags": ["EP", "Brain Kat Records"],
+    "tracklist": ["Room Tone", "Blue Hour", "Receiver"],
+    "detail": "Early experiments in negative space and low-end pressure."
+  }
+]

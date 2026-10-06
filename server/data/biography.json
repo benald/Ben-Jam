@@ -1,0 +1,175 @@
+{
+  "portrait": {
+    "src": "/images/profile/soul-project_ben-jam.jpg",
+    "alt": "Ben Jam behind the decks"
+  },
+  "intro": "Ben Jam is an old skool House n Garage DJ from London — previously known as \"BNG\" in the UK Garage years and \"DJ Chill'm\" in the raving days. Now producing as \"B to the J\" and owner of Brain Kat Records, he's been based in Perth, Western Australia since 2004.",
+  "sections": [
+    {
+      "heading": "London Years",
+      "paragraphs": [
+        "Cutting his teeth through the '90s and early 2000s, Ben Jam held down residencies across some of London's most storied small rooms, before founding multiple evcents including F@vouritizm in 2001 — later broadcast live on www.trustthedj.co.uk with Sarah Foote."
+      ],
+      "residencies": [
+        "Saturdays @ Est Bar, Soho : 1995 – 1996",
+        "Fridays @ Detroit Bar, Covent Garden : 1996 – 2002",
+        "Monthly @ Poo Na Na, Highbury & Islington : 1997 – 1998",
+        "Fling @ Gadia, Soho : 1998 – 2000",
+        "Saturdays @ Buffalo Bar, Highbury & Islington : 1999 – 2001",
+        "Saturdays @ Thirst, Soho : 2000 – 2002",
+        "Funkshoppe @ The Retreat, Islington : 2000 – 2003",
+        "Better Days @ The Retreat, Islington : 2001 – 2003",
+        "F@vouritizm, London : 2001 – 2004",
+        "Summerhouse, London : 2001 – 2003"
+      ],
+      "events": [
+        "Mansion Rave, Cirencester — 1996",
+        "Zanzibar, Leicester Square — 1997",
+        "Fashion Week Party, Chelsea — 1997",
+        "OXO Tower, Tower Bridge — 1998",
+        "The Guinness Fleadh, Findsbury Park — 1998",
+        "BBC Radio 1 Christmas Party @ Detroit Bar, Covent Garden — 1999",
+        "Reading Festival — 1999",
+        "Leeds Festival — 1999",
+        "Medicine Bar, Islington — 2000",
+        "Abigails Party, Soho - 2000",
+        "Live Radio 1 Broadcast with Judge Jules @ Creamfields, Oxford — 2000",
+        "Live Radio 1 Broadcast with Sasha, Pete Tong, Seb Fontaine @ Creamfields, Oxford — 2000",
+        "Fling with Desyn Maseilo @ Gadia, Soho — 2000",
+        "F@vouritizm @ City Loud (Turnmills), Farringdon — 2001",
+        "Le Grand œuf @ Mole Cub, Bath — 2001",
+        "Summerhouse @ Madame Jojo's, Soho — 2001",
+        "Live Radio 1 Broadcast @ Creamfields, Oxfordshire — 2002",
+        "Real Fruit @ The Retreat, Islington — 2002",
+        "Summerhouse @ Thirst, Soho — 2002",
+        "Better Days @ 333 Mother Bar, Hoxton Square — 2002",
+        "F@vouritizm @ Plan B, Brixton — 2002",
+        "Gatecrasher @ Heaven, Charing Cross — 2002",
+        "FabricLive @ Fabric, Farringdon — 2002",
+        "Better Days @ The Retreat, Islington — 2002 - 2003",
+        "F@vouritizm @ Herbal, Shoreditch — 2003",
+        "Real Fruit @ Thirst, Soho — 2003"
+      ],
+      "radio": [
+        "Guest: Planet FM, Southend-on-Sea — 1992",
+        "Guest: SBN Radio - Edward Adoo, Student Radio, Holborn — 2000",
+        "Host: Favouritizm Live on www.trustthedj.com — 2001"
+      ],
+      "djs": [
+        "Allan Skov",
+        "Ashley Beedle",
+        "Ashley Kellet",        
+        "Ben Appleyard",
+        "Boy George",
+        "Chad Jackson",
+        "DJ Disciple", 
+        "DJ Paulette",
+        "Damian Wilson",
+        "Daniel Bailey",
+        "Danny Rampling",
+        "Dave Lee",
+        "David Dunne",
+        "Desyn Masielo",
+        "Digs & Whoosh (diy)",
+        "Disasters at Work",
+        "Guy Williams",
+        "Jeremy Sylvester",
+        "Joey Musaphia",
+        "John Digweed",
+        "Judge Jules",
+        "Lewis Dene",
+        "Lukas",
+        "Mark Moore",
+        "Mark Pickering",
+        "Marshall Jefferson",
+        "Paul Barkworth",
+        "Pete Heller",
+        "Pete Tong",
+        "Phil Youngman", 
+        "Robert Owens",
+        "Robin Borrowes",
+        "Roy the Roach",
+        "Sarah Foote",
+        "Sasha",
+        "Savers",
+        "Seb Fontaine",
+        "Shades of Rhythm",
+        "Smokin Jo",
+        "Stuart Patterson",
+        "Terry Farley",
+        "The Sharp Boys",
+        "Tom North",
+        "Tom Real",
+        "Yooz Boyz"
+      ],
+      "image": {
+        "src": "https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "alt": "London club night crowd"
+      }
+    },
+    {
+      "heading": "Perth, Australia",
+      "paragraphs": [
+        "In 2004 Ben Jam relocated to Perth, Western Australia, where he continued to hold down residencies through the late 2000s and early 2010s, alongside guest sets including Hed Kandi's 2011 New Year's Eve party with Joey Negro.",
+        "It's also where Brain Kat Records was born — a home for his own productions as well as a small roster of house, disco and bass-leaning artists."
+      ],
+      "residencies": [
+        "The Avenue : 2004 – 2005", 
+        "Democracy : 2007 – 2012", 
+        "Geisha Bar : 2008 – 2011", 
+        "Box Deli : 2010 – 2012", 
+        "Soul Project : 2008 – 2013",
+        "Niche Bar : 2011 – 2013"
+      ],
+      "events": [
+        "Spring in the Valley @ Mash Brewery, Swan Valley — 2008", 
+        "Hed Kandi NYD, Leederville — 2011", 
+        "Shape, East Perth — 2010", 
+        "Capital Club, Perth CDB — 2011", 
+        "Bar Open, Northbridge — 2010"
+      ],
+      "radio": ["Guest: Trainwreck on RTRFM, Perth — 2009"],
+      "djs": [
+        "Adam Kelly",
+        "Adam Kit Kat",
+        "Âme",
+        "Ben Mac",
+        "Big A",
+        "DJ Cee",
+        "Daniel Vid",
+        "Darren Bouthier",
+        "Dave Miller",
+        "Declan", 
+        "JDubz",
+        "James A", 
+        "Jehan",
+        "Joby",
+        "Joey Negro",
+        "Jonno Choy", 
+        "Justin Martin",
+        "Kriece",
+        "Lee Wilson",
+        "Miguel Migs",
+        "Paul Malone", 
+        "Rob Sharp",
+        "Saul Bliss",
+        "Steffan Gooch", 
+        "Steve H", 
+        "Terry Waites", 
+        "Todd Perry",
+        "Vincent Kwok",
+        "Wes D'Arcy"
+      ],
+      "image": {
+        "src": "https://images.pexels.com/photos/164829/pexels-photo-164829.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "alt": "DJ booth at a Perth club night"
+      }
+    }
+  ],
+  "links": [
+    { "label": "Listen on Mixcloud", "url": "https://mixcloud.com/BenJam" },
+    { "label": "Ben Jam on Bandcamp", "url": "https://btothej.bandcamp.com" },
+    { "label": "Brain Kat Records on Bandcamp", "url": "https://brainkat.bandcamp.com" },
+    { "label": "F@vouritizm live archive", "url": "https://www.trustthedj.co.uk" }
+  ]
+}

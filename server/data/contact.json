@@ -1,0 +1,9 @@
+{
+  "email": "bookings@brainkatrecords.com",
+  "socials": [
+    { "label": "Instagram", "url": "https://instagram.com/benjammusic" },
+    { "label": "SoundCloud", "url": "https://soundcloud.com/benjammusic" },
+    { "label": "Mixcloud", "url": "https://mixcloud.com/BenJam" },
+    { "label": "Bandcamp", "url": "https://brainkat.bandcamp.com" }
+  ]
+}
