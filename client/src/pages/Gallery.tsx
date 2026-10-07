@@ -18,7 +18,7 @@ export default function Gallery() {
     <section>
       <header className="mb-8">
         <h1 className="font-display text-3xl sm:text-4xl font-bold text-cream">Gallery</h1>
-        <p className="text-muted mt-2">Moments from the booth.</p>
+        <p className="text-muted mt-2">Moments from the booth, the event floor, and beyond.</p>
       </header>
 
       {error && <p className="text-muted">Couldn't load the gallery right now. Please try again later.</p>}
