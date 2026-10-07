@@ -2,32 +2,21 @@
   {
     "id": "g5",
     "title": "Voices of House",
-    "meta": "The Harbour Bar \u00b7 30.04.2026",
-    "cover": "/images/flyers/2026_Harbour-Bar_voh.jpeg",
+    "meta": "The Harbour Bar \u00b7 04.10.2026",
+    "cover": "/images/flyers/2026-voh-regard.jpg",
     "photos": [
-      "/images/profile/ben-jam_voices-of-house_1_2026.jpg",
-      "/images/profile/ben-jam_voices-of-house_2_2026.jpeg",
-      "/images/profile/ben-jam_voices-of-house_3_2026.mp4"
+      "/images/events/voh-oct-2026/voh-regard-1.JPG",
+      "/images/events/voh-oct-2026/voh-regard-2.JPG"
     ]
   },
   {
     "id": "g4",
-    "title": "Fun at home",
-    "meta": "Various \u00b7 2004+",
-    "cover": "/images/profile/home_perth_2020.jpg",
+    "title": "Voices of House",
+    "meta": "The Harbour Bar \u00b7 30.04.2026",
+    "cover": "/images/flyers/2026_Harbour-Bar_voh.jpeg",
     "photos": [
-      "/images/profile/ben-jam_sarah-foote_favouritizm_2001.jpg",
-      "/images/profile/mark-pickering_ben-jam_worldwide-fm_2000.JPG",
-      "/images/profile/lettys-house-party_south-london_1996.jpg",
-      "/images/profile/karl-ben-tash_russel-square-london_1995.png",  
-      "/images/profile/requests-ben-jam_leaving-party_2004.JPG",
-      "/images/profile/ben-jam_crew-buffalo-bar_1998.jpg",
-      "/images/profile/ben-jam_fifi-buffalo-bar_1998.jpg",
-      "/images/profile/ben_mike_kensal_rise.jpg",
-      "/images/profile/ben-jam_leaving-party_2004.JPG",
-      "/images/profile/ben-jam_jeremy-sylvester_nate-dogg_leaving-party_2004.jpg",
-      "/images/profile/another-photo-example.jpg"
-
+      "/images/events/voh-may-2026/ben-jam_voices-of-house_1_2026.jpg",
+      "/images/events/voh-may-2026/ben-jam_voices-of-house_2_2026.jpeg"
     ]
   },
   {
