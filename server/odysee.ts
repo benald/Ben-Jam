@@ -5,6 +5,8 @@ import type { FeedItem } from "../shared/schema";
 import { decodeEntities, formatDuration } from "./feedUtils";
 
 const RSS_URL = "https://odysee.com/$/rss/@BenJam:c";
+const CLAIM_SEARCH_URL = "https://api.na-backend.odysee.com/api/v1/proxy";
+const CHANNEL = "@BenJam:c";
 const CACHE_TTL_MS = 10 * 60 * 1000;
 
 // Disk-backed copy of the last successful fetch, used as a last-resort
@@ -82,17 +84,82 @@ async function fetchRssOnce(): Promise<FeedItem[]> {
   return items;
 }
 
+interface ClaimSearchItem {
+  name?: string;
+  claim_id?: string;
+  value?: {
+    title?: string;
+    description?: string;
+    release_time?: string;
+    stream_type?: string;
+    thumbnail?: { url?: string };
+    video?: { duration?: number };
+    audio?: { duration?: number };
+  };
+}
+
+function buildItemFromClaim(item: ClaimSearchItem): FeedItem | null {
+  const { name, claim_id: claimId, value } = item;
+  if (!name || !claimId || !value?.title) return null;
+
+  const link = `https://odysee.com/${name}:${claimId}`;
+  const releaseTimeMs = value.release_time ? Number(value.release_time) * 1000 : undefined;
+  const durationSeconds = value.video?.duration ?? value.audio?.duration;
+
+  return {
+    id: link,
+    title: decodeEntities(value.title),
+    link,
+    embedUrl: toEmbedUrl(link),
+    thumbnail: value.thumbnail?.url,
+    pubDate: releaseTimeMs ? new Date(releaseTimeMs).toUTCString() : undefined,
+    duration: durationSeconds ? formatDuration(durationSeconds) : undefined,
+    mediaType: value.stream_type === "video" ? "video" : "audio",
+    description: value.description ? decodeEntities(value.description).trim() : undefined,
+  };
+}
+
+// Independent fallback data source: Odysee's JSON-RPC API on a different
+// domain/backend pool than the "$/rss/" convenience endpoint above, used as
+// an alternate path in case that specific endpoint/node is unhealthy.
+async function fetchClaimSearchOnce(): Promise<FeedItem[]> {
+  const res = await fetch(CLAIM_SEARCH_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      method: "claim_search",
+      params: {
+        channel: CHANNEL,
+        claim_type: "stream",
+        order_by: ["release_time"],
+        page_size: 50,
+      },
+    }),
+  });
+  if (!res.ok) throw new Error(`Odysee claim_search request failed: ${res.status}`);
+  const json = (await res.json()) as { result?: { items?: ClaimSearchItem[] }; error?: { message?: string } };
+  if (json.error) throw new Error(`Odysee claim_search error: ${json.error.message}`);
+
+  const items: FeedItem[] = [];
+  for (const claim of json.result?.items ?? []) {
+    const item = buildItemFromClaim(claim);
+    if (item) items.push(item);
+  }
+  return items;
+}
+
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-// Odysee load-balances this endpoint across a pool of backend nodes, and
+// Odysee load-balances these endpoints across a pool of backend nodes, and
 // individual nodes are sometimes unhealthy: they can return a 200 with a
 // generic "invalid channel" fallback body instead of the feed, or fail
-// outright. This has been observed to happen intermittently regardless of
-// the caller's network, so retrying a few times (each attempt may land on a
-// different node) works around it. If every attempt still fails, fall back
-// to the last successfully fetched result rather than showing an error for
-// what is usually a transient upstream blip.
-const MAX_ATTEMPTS = 5;
+// outright. This has been observed to happen intermittently, and in some
+// cases consistently for a given caller, so attempts alternate between two
+// independent endpoints (which may be routed differently) in addition to
+// retrying. If every attempt still fails, fall back to the last
+// successfully fetched result rather than showing an error for what is
+// usually a transient upstream issue.
+const FETCHERS = [fetchRssOnce, fetchClaimSearchOnce, fetchRssOnce, fetchClaimSearchOnce, fetchRssOnce];
 const RETRY_DELAY_MS = 750;
 
 let lastGood: { items: FeedItem[]; fetchedAt: number } | null = null;
@@ -102,9 +169,9 @@ export async function fetchOdyseeArchive(): Promise<FeedItem[]> {
     return cache.items;
   }
 
-  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+  for (let attempt = 1; attempt <= FETCHERS.length; attempt++) {
     try {
-      const items = await fetchRssOnce();
+      const items = await FETCHERS[attempt - 1]();
       if (items.length > 0) {
         cache = { items, fetchedAt: Date.now() };
         lastGood = cache;
@@ -112,14 +179,14 @@ export async function fetchOdyseeArchive(): Promise<FeedItem[]> {
         return items;
       }
     } catch (err) {
-      console.error(`Odysee RSS fetch attempt ${attempt}/${MAX_ATTEMPTS} failed`, err);
+      console.error(`Odysee fetch attempt ${attempt}/${FETCHERS.length} failed`, err);
     }
-    if (attempt < MAX_ATTEMPTS) await sleep(RETRY_DELAY_MS);
+    if (attempt < FETCHERS.length) await sleep(RETRY_DELAY_MS);
   }
 
   // in-memory cache from an earlier successful fetch in this process
   if (lastGood) {
-    console.error("Odysee RSS request failed after retries; serving last known good feed");
+    console.error("Odysee fetch failed after retries; serving last known good feed");
     return lastGood.items;
   }
 
@@ -127,11 +194,11 @@ export async function fetchOdyseeArchive(): Promise<FeedItem[]> {
   // back to whatever was last persisted to disk by a previous process
   const diskItems = await readDiskCache();
   if (diskItems && diskItems.length > 0) {
-    console.error("Odysee RSS request failed after retries; serving disk-cached feed");
+    console.error("Odysee fetch failed after retries; serving disk-cached feed");
     return diskItems;
   }
 
-  throw new Error("Odysee RSS request returned no items after retries");
+  throw new Error("Odysee fetch returned no items after retries");
 }
 
 
