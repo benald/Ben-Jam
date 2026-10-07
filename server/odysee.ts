@@ -40,27 +40,7 @@ function parseItem(block: string): FeedItem | null {
   };
 }
 
-// TEMPORARY diagnostic helper for debugging the production empty-feed issue; remove once resolved.
-export async function debugOdyseeFetch() {
-  const res = await fetch(RSS_URL, {
-    headers: { "User-Agent": "Mozilla/5.0 (compatible; BenJamSite/1.0)" },
-  });
-  const text = await res.text();
-  return {
-    status: res.status,
-    ok: res.ok,
-    contentType: res.headers.get("content-type"),
-    length: text.length,
-    itemMatches: [...text.matchAll(/<item>/g)].length,
-    snippet: text.slice(0, 500),
-  };
-}
-
-export async function fetchOdyseeArchive(): Promise<FeedItem[]> {
-  if (cache && Date.now() - cache.fetchedAt < CACHE_TTL_MS) {
-    return cache.items;
-  }
-
+async function fetchRssOnce(): Promise<FeedItem[]> {
   const res = await fetch(RSS_URL, {
     headers: { "User-Agent": "Mozilla/5.0 (compatible; BenJamSite/1.0)" },
   });
@@ -72,12 +52,37 @@ export async function fetchOdyseeArchive(): Promise<FeedItem[]> {
     const item = parseItem(match[1]);
     if (item) items.push(item);
   }
-
-  // don't cache an empty result: it's more likely a transient fetch/parse issue
-  // than the channel genuinely having zero videos, so let the next request retry
-  if (items.length > 0) {
-    cache = { items, fetchedAt: Date.now() };
-  }
   return items;
 }
+
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+// Odysee load-balances this endpoint across a pool of backend nodes; individual
+// nodes are sometimes unhealthy and return a 200 with a generic "invalid
+// channel" fallback body instead of the feed. Retrying a few times (each
+// attempt likely lands on a different node) works around those transient
+// failures instead of surfacing an empty/broken feed.
+const MAX_ATTEMPTS = 3;
+const RETRY_DELAY_MS = 500;
+
+export async function fetchOdyseeArchive(): Promise<FeedItem[]> {
+  if (cache && Date.now() - cache.fetchedAt < CACHE_TTL_MS) {
+    return cache.items;
+  }
+
+  let items: FeedItem[] = [];
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    items = await fetchRssOnce();
+    if (items.length > 0) break;
+    if (attempt < MAX_ATTEMPTS) await sleep(RETRY_DELAY_MS);
+  }
+
+  if (items.length === 0) {
+    throw new Error("Odysee RSS request returned no items after retries");
+  }
+
+  cache = { items, fetchedAt: Date.now() };
+  return items;
+}
+
 
