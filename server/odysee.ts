@@ -45,7 +45,9 @@ export async function fetchOdyseeArchive(): Promise<FeedItem[]> {
     return cache.items;
   }
 
-  const res = await fetch(RSS_URL);
+  const res = await fetch(RSS_URL, {
+    headers: { "User-Agent": "Mozilla/5.0 (compatible; BenJamSite/1.0)" },
+  });
   if (!res.ok) throw new Error(`Odysee RSS request failed: ${res.status}`);
   const xml = await res.text();
 
@@ -55,7 +57,11 @@ export async function fetchOdyseeArchive(): Promise<FeedItem[]> {
     if (item) items.push(item);
   }
 
-  cache = { items, fetchedAt: Date.now() };
+  // don't cache an empty result: it's more likely a transient fetch/parse issue
+  // than the channel genuinely having zero videos, so let the next request retry
+  if (items.length > 0) {
+    cache = { items, fetchedAt: Date.now() };
+  }
   return items;
 }
 
