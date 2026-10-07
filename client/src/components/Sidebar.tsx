@@ -135,19 +135,19 @@ export default function Sidebar() {
         </div>
       )}
 
-      {bio && bio.links.length > 0 && (
+      {contact && (
         <div className="bg-surface rounded-t-lg p-4 sm:p-5">
-          <h2 className="text-xs font-semibold uppercase tracking-wide text-muted mb-3">Links</h2>
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-muted mb-3">Audio sites</h2>
           <div className="flex flex-col gap-2">
-            {bio.links.map((link) => (
+            {contact.audio.map((s) => (
               <a
-                key={link.url}
-                href={link.url}
+                key={s.url}
+                href={s.url}
                 target="_blank"
                 rel="noreferrer"
                 className="text-sm text-muted hover:text-accent transition-colors"
               >
-                {link.label}
+                {s.label}
               </a>
             ))}
           </div>

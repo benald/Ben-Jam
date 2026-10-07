@@ -1,9 +1,16 @@
 {
-  "email": "bookings@brainkatrecords.com",
+  "email": "brainkat@gmail.com",
   "socials": [
-    { "label": "Instagram", "url": "https://instagram.com/benjammusic" },
-    { "label": "SoundCloud", "url": "https://soundcloud.com/benjammusic" },
+    { "label": "Link Tree", "url": "https://linktr.ee/btothej" },
+    { "label": "Facebook", "url": "https://www.facebook.com/bentothejam" },
+    { "label": "Instagram", "url": "https://www.instagram.com/oldskool_dj" },
+    { "label": "TikTok", "url": "https://www.tiktok.com/@oldskool_dj" }
+  ],
+  "audio": [
+    { "label": "SoundCloud", "url": "https://soundcloud.com/ben-jam" },
     { "label": "Mixcloud", "url": "https://mixcloud.com/BenJam" },
-    { "label": "Bandcamp", "url": "https://brainkat.bandcamp.com" }
+    { "label": "Bandcamp", "url": "https://btothej.bandcamp.com" },
+    { "label": "BKR on Bandcamp ", "url": "https://brainkat.bandcamp.com" },
+    { "label": "BKR on SoundCloud", "url": "https://soundcloud.com/brain-kat-records" }
   ]
 }
