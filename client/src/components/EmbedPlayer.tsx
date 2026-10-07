@@ -18,7 +18,7 @@ export default function EmbedPlayer({ embedUrl, title }: { embedUrl?: string; ti
       src={embedUrl}
       className="w-full h-24 rounded-md border-0"
       loading="lazy"
-      allow="autoplay"
+      seamless
     />
   );
 }
