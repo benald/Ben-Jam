@@ -1,8 +1,35 @@
+import { readFile, writeFile } from "node:fs/promises";
+import os from "node:os";
+import path from "node:path";
 import type { FeedItem } from "../shared/schema";
 import { decodeEntities, formatDuration } from "./feedUtils";
 
 const RSS_URL = "https://odysee.com/$/rss/@BenJam:c";
 const CACHE_TTL_MS = 10 * 60 * 1000;
+
+// Disk-backed copy of the last successful fetch, used as a last-resort
+// fallback if Odysee is still unreachable after retries and the in-memory
+// cache was lost (e.g. the process just restarted). Written best-effort;
+// it's fine if this is unavailable (e.g. read-only filesystem).
+const DISK_CACHE_PATH = path.join(os.tmpdir(), "ben-jam-odysee-cache.json");
+
+async function readDiskCache(): Promise<FeedItem[] | null> {
+  try {
+    const raw = await readFile(DISK_CACHE_PATH, "utf-8");
+    const parsed = JSON.parse(raw) as { items: FeedItem[] };
+    return parsed.items;
+  } catch {
+    return null;
+  }
+}
+
+async function writeDiskCache(items: FeedItem[]): Promise<void> {
+  try {
+    await writeFile(DISK_CACHE_PATH, JSON.stringify({ items }), "utf-8");
+  } catch (err) {
+    console.error("Failed to persist Odysee disk cache", err);
+  }
+}
 
 let cache: { items: FeedItem[]; fetchedAt: number } | null = null;
 
@@ -57,32 +84,54 @@ async function fetchRssOnce(): Promise<FeedItem[]> {
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-// Odysee load-balances this endpoint across a pool of backend nodes; individual
-// nodes are sometimes unhealthy and return a 200 with a generic "invalid
-// channel" fallback body instead of the feed. Retrying a few times (each
-// attempt likely lands on a different node) works around those transient
-// failures instead of surfacing an empty/broken feed.
-const MAX_ATTEMPTS = 3;
-const RETRY_DELAY_MS = 500;
+// Odysee load-balances this endpoint across a pool of backend nodes, and
+// individual nodes are sometimes unhealthy: they can return a 200 with a
+// generic "invalid channel" fallback body instead of the feed, or fail
+// outright. This has been observed to happen intermittently regardless of
+// the caller's network, so retrying a few times (each attempt may land on a
+// different node) works around it. If every attempt still fails, fall back
+// to the last successfully fetched result rather than showing an error for
+// what is usually a transient upstream blip.
+const MAX_ATTEMPTS = 5;
+const RETRY_DELAY_MS = 750;
+
+let lastGood: { items: FeedItem[]; fetchedAt: number } | null = null;
 
 export async function fetchOdyseeArchive(): Promise<FeedItem[]> {
   if (cache && Date.now() - cache.fetchedAt < CACHE_TTL_MS) {
     return cache.items;
   }
 
-  let items: FeedItem[] = [];
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
-    items = await fetchRssOnce();
-    if (items.length > 0) break;
+    try {
+      const items = await fetchRssOnce();
+      if (items.length > 0) {
+        cache = { items, fetchedAt: Date.now() };
+        lastGood = cache;
+        void writeDiskCache(items);
+        return items;
+      }
+    } catch (err) {
+      console.error(`Odysee RSS fetch attempt ${attempt}/${MAX_ATTEMPTS} failed`, err);
+    }
     if (attempt < MAX_ATTEMPTS) await sleep(RETRY_DELAY_MS);
   }
 
-  if (items.length === 0) {
-    throw new Error("Odysee RSS request returned no items after retries");
+  // in-memory cache from an earlier successful fetch in this process
+  if (lastGood) {
+    console.error("Odysee RSS request failed after retries; serving last known good feed");
+    return lastGood.items;
   }
 
-  cache = { items, fetchedAt: Date.now() };
-  return items;
+  // the process just (re)started and hasn't fetched successfully yet; fall
+  // back to whatever was last persisted to disk by a previous process
+  const diskItems = await readDiskCache();
+  if (diskItems && diskItems.length > 0) {
+    console.error("Odysee RSS request failed after retries; serving disk-cached feed");
+    return diskItems;
+  }
+
+  throw new Error("Odysee RSS request returned no items after retries");
 }
 
 
