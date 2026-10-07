@@ -40,6 +40,22 @@ function parseItem(block: string): FeedItem | null {
   };
 }
 
+// TEMPORARY diagnostic helper for debugging the production empty-feed issue; remove once resolved.
+export async function debugOdyseeFetch() {
+  const res = await fetch(RSS_URL, {
+    headers: { "User-Agent": "Mozilla/5.0 (compatible; BenJamSite/1.0)" },
+  });
+  const text = await res.text();
+  return {
+    status: res.status,
+    ok: res.ok,
+    contentType: res.headers.get("content-type"),
+    length: text.length,
+    itemMatches: [...text.matchAll(/<item>/g)].length,
+    snippet: text.slice(0, 500),
+  };
+}
+
 export async function fetchOdyseeArchive(): Promise<FeedItem[]> {
   if (cache && Date.now() - cache.fetchedAt < CACHE_TTL_MS) {
     return cache.items;

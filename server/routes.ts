@@ -2,7 +2,7 @@ import type { Express, Request, Response } from "express";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { fetchOdyseeArchive } from "./odysee";
+import { fetchOdyseeArchive, debugOdyseeFetch } from "./odysee";
 import { fetchMixcloudArchive } from "./mixcloud";
 import { fetchBandcampArchive } from "./bandcamp";
 
@@ -39,6 +39,15 @@ export function registerRoutes(app: Express) {
       }
     });
   }
+
+  // TEMPORARY diagnostic route for debugging the production empty-feed issue; remove once resolved.
+  app.get("/api/odysee-debug", async (_req: Request, res: Response) => {
+    try {
+      res.json(await debugOdyseeFetch());
+    } catch (err) {
+      res.status(500).json({ error: String(err) });
+    }
+  });
 
   const feeds = {
     "odysee-archive": fetchOdyseeArchive,
