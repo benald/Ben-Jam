@@ -6,7 +6,6 @@ const links = [
   { to: "/releases", label: "Releases" },
   { to: "/mixes", label: "Mixes" },
   { to: "/demos", label: "Demos" },
-  { to: "/demos2", label: "Demos2" },
   { to: "/label", label: "Record Label" },
   { to: "/events", label: "Events" },
   { to: "/gallery", label: "Gallery" },
