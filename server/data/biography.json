@@ -167,9 +167,10 @@
     }
   ],
   "links": [
-    { "label": "Listen on Mixcloud", "url": "https://mixcloud.com/BenJam" },
-    { "label": "Ben Jam on Bandcamp", "url": "https://btothej.bandcamp.com" },
-    { "label": "Brain Kat Records on Bandcamp", "url": "https://brainkat.bandcamp.com" },
-    { "label": "F@vouritizm live archive", "url": "https://www.trustthedj.co.uk" }
+    { "icon": "/images/websites/beatport.png", "label": "Ben Jam", "url": "https://www.beatport.com/artist/ben-jam/76020" },
+    { "icon": "/images/websites/traxsource.png", "label": "Ben Jam", "url": "https://www.traxsource.com/artist/10654/ben-jam" },
+    { "icon": "/images/websites/beatport.png", "label": "Brain Kat", "url": "https://www.beatport.com/label/brain-kat-records/12720" },
+    { "icon": "/images/websites/apple.png", "label": "Ben Jam", "url": "https://music.apple.com/au/artist/ben-jam/1557713911" },
+    { "icon": "/images/websites/spotify.png", "label": "Ben Jam", "url": "https://open.spotify.com/artist/7f9JyCIf496FGO9BJ6KVVf" }
   ]
 }

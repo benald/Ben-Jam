@@ -6,7 +6,7 @@
     { "label": "Instagram", "url": "https://www.instagram.com/oldskool_dj" },
     { "label": "TikTok", "url": "https://www.tiktok.com/@oldskool_dj" }
   ],
-  "audio": [
+  "audios": [
     { "label": "SoundCloud", "url": "https://soundcloud.com/ben-jam" },
     { "label": "Mixcloud", "url": "https://mixcloud.com/BenJam" },
     { "label": "Bandcamp", "url": "https://btothej.bandcamp.com" },
