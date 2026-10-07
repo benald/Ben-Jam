@@ -1,18 +1,5 @@
 [
   {
-    "id": "my-house-ben-jam-mix",
-    "title": "My House (Ben Jam Mix)",
-    "artist": "Jehan",
-    "coverImage": "https://f4.bcbits.com/img/a3608018417_2.jpg",
-    "buyUrl": "https://btothej.bandcamp.com/track/my-house-ben-jam-remix",
-    "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=3324089840/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/transparent=true/",
-    "embedHeight": "442px",
-    "releaseDate": "2013",
-    "tags": ["Original Mix"],
-    "duration": "7:18",
-    "accentColor": "#e99708"
-  },
-  {
     "id": "its-dedication-ben-jam-mix",
     "title": "It's Dedication (Ben Jam Mix)",
     "artist": "Terry Waites",
@@ -23,6 +10,19 @@
     "releaseDate": "2020",
     "tags": ["Ben Jam Mix"],
     "duration": "6:38",
+    "accentColor": "#e99708"
+  },
+  {
+    "id": "my-house-ben-jam-mix",
+    "title": "My House (Ben Jam Mix)",
+    "artist": "Jehan",
+    "coverImage": "https://f4.bcbits.com/img/a3608018417_2.jpg",
+    "buyUrl": "https://btothej.bandcamp.com/track/my-house-ben-jam-remix",
+    "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=3324089840/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/transparent=true/",
+    "embedHeight": "442px",
+    "releaseDate": "2015",
+    "tags": ["Original Mix"],
+    "duration": "7:18",
     "accentColor": "#e99708"
   },
   {

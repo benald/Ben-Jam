@@ -1,19 +1,83 @@
 [
   {
-    "id": "evt-002",
+    "id": "evt-009",
+    "title": "Voices of House presents Junior Jack",
+    "date": "09 MAR 2027",
+    "venue": "The Harbour Bar",
+    "city": "Hillarys Boat Harbour, WA, AU",
+    "detail": "Ben Jam \u00b7 20:00\u201423:00",
+    "eventUrl": ""
+  },
+  {
+    "id": "evt-008",
+    "title": "Mikaela's Belated Birthday",
+    "date": "2 NOV 2026",
+    "venue": "House Party",
+    "city": "Floreat, WA, AU",
+    "detail": "Ben Jam \u00b7 20:00\u201403:00",
+    "eventUrl": ""
+  },
+  {
+    "id": "evt-007",
+    "title": "Saskia & Harry's 21st",
+    "date": "17 MAR 2027",
+    "venue": "The Scarborough Beach Bar",
+    "city": "Scarborough, WA, AU",
+    "detail": "Ben Jam \u00b7 22:00\u201401:00",
+    "eventUrl": ""
+  },
+  {
+    "id": "evt-006",
+    "title": "Bubbles n Beats",
+    "date": "09 OCT 2026",
+    "venue": "The Harbour Bar",
+    "city": "Hillarys Boat Harbour, WA, AU",
+    "detail": "Ben Jam \u00b7 20:00\u201423:00",
+    "eventUrl": ""
+  },
+  {
+    "id": "evt-005",
     "title": "Voices of House presents Regard",
-    "date": "04 OCT 2024",
+    "date": "04 OCT 2026",
     "venue": "The Harbour Bar",
     "city": "Hillarys Boat Harbour, WA, AU",
     "detail": "Ben Jam \u00b7 22:00\u201423:00",
-    "eventUrl": "Ben Jam \u00b7 22:00\u201423:00"
+    "eventUrl": ""
   },
   {
-    "id": "evt-001",
+    "id": "evt-004",
+    "title": "Ben Jam live on De La Casa Radio",
+    "date": "28 SEP 2026",
+    "venue": "De La Casa Radio",
+    "city": "London, UK",
+    "detail": "Ben Jam \u00b7 00:00\u201401:00",
+    "eventUrl": "https://www.mixcloud.com/DeLaCasa_Radio/ben-jam-de-la-casa-radio-270926/"
+  },
+  {
+    "id": "evt-003",
+    "title": "Ben Mac's 50th",
+    "date": "19 SEP 2026",
+    "venue": "House Party",
+    "city": "Kingsley, WA, AU",
+    "detail": "Ben Jam \u00b7 22:00\u201423:00",
+    "eventUrl": ""
+  },
+  {
+    "id": "evt-002",
     "title": "Voices of House",
     "date": "30 MAY 2026",
     "venue": "The Harbour Bar",
     "city": "Hillarys Boat Harbour, WA, AU",
-    "detail": "Ben Jam \u00b7 20:00\u201421:00"
+    "detail": "Ben Jam \u00b7 20:00\u201421:00",
+    "eventUrl": ""
+  },
+  {
+    "id": "evt-001",
+    "title": "Mikaela & Jamons 30th Wedding Anniversary ",
+    "date": "2 MAY 2026",
+    "venue": "House Party",
+    "city": "Floreat, WA, AU",
+    "detail": "Ben Jam \u00b7 20:00\u201403:00",
+    "eventUrl": ""
   }
 ]
