@@ -5,7 +5,6 @@ import Biography from "./pages/Biography";
 import Releases from "./pages/Releases";
 import Mixes from "./pages/Mixes";
 import Demos from "./pages/Demos";
-import Demos2 from "./pages/Demos2";
 import RecordLabel from "./pages/RecordLabel";
 import Events from "./pages/Events";
 import Gallery from "./pages/Gallery";
