@@ -9,7 +9,7 @@ const shortcuts = [
 export default function Home() {
   return (
     <section className="flex flex-col items-center text-center gap-6 py-12">
-      <img src="/images/profile/ben-jam_niche_leederville.jpg" alt="Ben Jam logo" className="w-32 h-32 sm:w-40 sm:h-40 rounded-full shadow-lg object-cover" />
+      <img src="/images/profile/au/ben-jam_tash_niche_leederville.jpg" alt="Ben Jam logo" className="w-32 h-32 sm:w-40 sm:h-40 rounded-full shadow-lg object-cover" />
       <h1 className="font-display text-4xl sm:text-5xl font-bold text-cream">Ben Jam</h1>
       <p className="text-muted max-w-xl">
         DJ, producer and Brain Kat Records hed honcho. Explore the discography, catch the latest mixes, and find out
