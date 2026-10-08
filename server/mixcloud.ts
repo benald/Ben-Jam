@@ -4,6 +4,7 @@ import { formatDuration } from "./feedUtils";
 const MIXCLOUD_USER = "BenJam";
 const CACHE_TTL_MS = 10 * 60 * 1000;
 const MAX_PAGES = 10; // safety cap on pagination requests
+const TRACK_MAX_DURATION_SECONDS = 15 * 60;
 
 interface MixcloudCast {
   key: string;
@@ -34,6 +35,10 @@ export async function fetchMixcloudArchive(): Promise<FeedItem[]> {
     const json: { data: MixcloudCast[]; paging?: { next?: string } } = await res.json();
 
     for (const cast of json.data) {
+      if (cast.audio_length === undefined || cast.audio_length <= TRACK_MAX_DURATION_SECONDS) {
+        continue;
+      }
+
       items.push({
         id: cast.key,
         title: cast.name,

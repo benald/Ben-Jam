@@ -3,7 +3,7 @@
     "id": "g5",
     "title": "Voices of House present Regard",
     "meta": "The Harbour Bar \u00b7 04.10.2026",
-    "cover": "/images/flyers/au/2026-voh-regard.jpg",
+    "cover": "/images/flyers/au/voh_regard_cover.png",
     "photos": [
       "/images/events/voh-oct-2026/voh-regard-1.JPG",
       "/images/events/voh-oct-2026/voh-regard-2.JPG"
@@ -84,15 +84,12 @@
       "/images/profile/au/ben-jam_home.jpg",
       "/images/profile/au/ben-jam_home_2010.jpg",
       "/images/profile/au/ben-jam_james-a_geishabar.png",
-      "/images/profile/au/ben-jam_kids-graduation-party.jpg",
-      "/images/profile/au/ben-jam_niche_leederville.jpg",
-      "/images/profile/au/ben-jam_nye_2020.JPG",
-      "/images/profile/au/ben-jam_nye2019.jpg",
       "/images/profile/au/ben-jam_secret-sundaze.jpg",
       "/images/profile/au/ben-jam_soul-project.png",
       "/images/profile/au/ben-jam_soul-project_2009.jpg",
       "/images/profile/au/ben-jam_soul-project-2.png",
       "/images/profile/au/ben-jam_soul-project-3.png",
+      "/images/profile/au/ben-jam_niche_leederville.jpg",
       "/images/profile/au/ben-jam_tash_niche_leederville.jpg",
       "/images/profile/au/ben-jam_trigg-beach_2005.JPG",
       "/images/profile/au/ben-jam_vincent-kwok_tash_2011.jpg",
@@ -101,7 +98,10 @@
       "/images/profile/au/ben-jam-geishabar-2_2012.png",
       "/images/profile/au/justin-martin_ben-jam_democracy.png",
       "/images/profile/au/soul-project_ben-jam.jpg",
-      "/images/profile/au/terry-waites_ben-jam_soul-project_2010.jpg"
+      "/images/profile/au/terry-waites_ben-jam_soul-project_2010.jpg",
+      "/images/profile/au/ben-jam_nye2019.jpg",
+      "/images/profile/au/ben-jam_nye_2020.JPG",
+      "/images/profile/au/ben-jam_kids-graduation-party.jpg"
     ]
   },
   
@@ -111,9 +111,6 @@
     "meta": "Favouritizm Live \u00b7 2002",
     "cover": "/images/radio/fav-live-11-sept-2002.jpg",
     "photos": [
-      "/images/radio/308847_10150344217331641_1359147953_n.jpg",
-      "/images/radio/314677_10150344217386641_751463902_n.jpg",
-      "/images/radio/317420_10150344217236641_617326789_n.jpg",
       "/images/radio/fav-live-11-sept-2002.jpg",
       "/images/radio/fav-live-18-sept-2002.jpg",
       "/images/radio/fav-live-9-oct-2002.jpg"
