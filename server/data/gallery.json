@@ -64,7 +64,7 @@
   {
     "id": "g3",
     "title": "Perth Event Photos",
-    "meta": "Geisha Bar, Niche, Flawless \u00b7 12.10.13",
+    "meta": "Geisha Bar, Niche, Flawless, Box Deli, Bar Open\u00b7 12.10.13",
     "cover": "/images/profile/au/ben-jam_ame_democracy.png",
     "photos": [
       "/images/profile/au/178_7833.JPG",
@@ -175,39 +175,29 @@
   {
     "id": "g12",
     "title": "Venues",
-    "cover": "/images/venues/306515_103118949852415_336727622_n1-optimised.jpg",
+    "meta": "Detroit Bar & Buffalo Bar \u00b7 1994 - 2004",
+    "cover": "/images/venues/Buffalo-Bar_Highbury_Islington-1.jpg",
     "photos": [
-      "/images/venues/306515_103118949852415_336727622_n1-optimised.jpg",
-      "/images/venues/407599_103118273185816_708827846_n1-optimised.jpg",
-      "/images/venues/546829_103118899852420_200639050_n1-optimised.jpg",
-      "/images/venues/559631_103118196519157_1160730114_n1-optimised.jpg",
-      "/images/venues/63145_103118976519079_704466025_n1-optimised.jpg",
-      "/images/venues/barrel-vaulted-ceiling-brickwork-illumination-lighting-design-nulty.jpg",
-      "/images/venues/buffalobar.jpeg",
-      "/images/venues/buffalobar2.jpg",
-      "/images/venues/detroitbar.jpeg",
-      "/images/venues/Detroit-Bar1-optimised.jpg",
-      "/images/venues/Detroit-Bar-Covent-Garden--optimised.jpg",
-      "/images/venues/Detroit-Bar-optimised.jpg",
-      "/images/venues/detroit-optimised.jpg",
-      "/images/venues/j2018.jpg",
-      "/images/venues/j20181.jpg",
-      "/images/venues/j20182.jpg",
-      "/images/venues/j20185.jpg",
-      "/images/venues/j20186.jpg",
-      "/images/venues/j20189.jpg",
-      "/images/venues/reception_opt.jpg",
-      "/images/venues/terminalv1.jpg",
-      "/images/venues/terminalv2.jpg",
-      "/images/venues/terminalv3.jpg",
-      "/images/venues/terminalv5.jpg"
+      "/images/venues/Buffalo-Bar_sm.jpeg",
+      "/images/venues/Buffalo-Bar_Highbury_Islington-1.jpg",
+      "/images/venues/Detroit-Bar_sm.jpeg",
+      "/images/venues/Detroit-Bar-Covent-Garden-0.jpg",
+      "/images/venues/Detroit-Bar-Covent-Garden-1.jpg",
+      "/images/venues/Detroit-Bar-Covent-Garden-2.jpg",
+      "/images/venues/Detroit-Bar-Covent-Garden-3.jpg",
+      "/images/venues/Detroit-Bar-Covent-Garden-4.jpg",
+      "/images/venues/Detroit-Bar-Covent-Garden-5.jpg",
+      "/images/venues/Detroit-Bar-Covent-Garden-6.jpg",
+      "/images/venues/Detroit-Bar-Covent-Garden-7.jpg",
+      "/images/venues/Detroit-Bar-Covent-Garden-8.jpg",
+      "/images/venues/Detroit-Bar-Covent-Garden-9.jpg"
     ]
   },
 
   {
     "id": "g2",
     "title": "London Pics",
-    "meta": "Various \u00b7 1995 - 2004",
+    "meta": "Various \u00b7 1994 - 2004",
     "cover": "/images/profile/uk/karl-ben-tash_russel-square-london_1995.png",
     "photos": [
       "/images/profile/uk/120_2060.JPG",
@@ -304,13 +294,13 @@
     "meta": "",
     "cover": "/images/press/trust-the-dj.png",
     "photos": [
+      "/images/press/trust-the-dj.png",
       "/images/press/427210_10150990325820735_1445496658_n.jpg",
       "/images/press/427554_10150992403235735_696664585_n.jpg",
       "/images/press/aus-press.jpg",
       "/images/press/fav-press.jpg",
       "/images/press/salt-magazine.jpg",
       "/images/press/the-knowledge.jpg",
-      "/images/press/trust-the-dj.png",
       "/images/press/whats-on-london-2002.png",
       "/images/press/x-press-magazine-perth-2001.png"
     ]

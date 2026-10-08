@@ -1,14 +1,14 @@
 {
   "portrait": {
-    "src": "/images/profile/au/soul-project_ben-jam.jpg",
-    "alt": "Ben Jam behind the decks"
+    "src": "/images/profile/au/ben-jam_niche_leederville.jpg",
+    "alt": "Ben Jam and wife at Niche Leederville"
   },
-  "intro": "Ben Jam is an old skool House n Garage DJ from London — previously known as \"BNG\" in the UK Garage years and \"DJ Chill'm\" in the raving days. Now producing as \"B to the J\" and owner of Brain Kat Records, he's been based in Perth, Western Australia since 2004.",
+  "intro": "Ben Jam is an old skool House n Garage DJ from London — previously known as \"BNG\" in the UK Garage years and \"DJ Chill'm\" in the raving days. He's hed honcho at Brain Kat Records which operatred between 2008 - 2014.  With many remixes under hi B to the J moiniker. He's been based in Perth, Western Australia since 2004.",
   "sections": [
     {
       "heading": "London Years",
       "paragraphs": [
-        "Cutting his teeth through the '90s and early 2000s, Ben Jam held down residencies across some of London's most storied small rooms, before founding multiple evcents including F@vouritizm in 2001 — later broadcast live on www.trustthedj.co.uk with Sarah Foote."
+        "Cutting his teeth through the '90s and early 2000s, Ben Jam held down residencies across some of London's most storied rooms and spaces, including a 6 year residency on Friday night at Detroit Bar in Covent Garden.  He founded multiple events including Fling, Summerhouse, Real Fruit, and joined F@vouritizm with Sarah Foote.  In 2001 they hosted Favouritizm Live on www.trustthedj.co.uk."
       ],
       "residencies": [
         "Saturdays @ Est Bar, Soho : 1995 – 1996",
@@ -103,7 +103,7 @@
         "Yooz Boyz"
       ],
       "image": {
-        "src": "https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "src": "/images/profile/au/ben-jam_soul-project-2.png",
         "alt": "London club night crowd"
       }
     },
@@ -161,16 +161,16 @@
         "Wes D'Arcy"
       ],
       "image": {
-        "src": "https://images.pexels.com/photos/164829/pexels-photo-164829.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        "alt": "DJ booth at a Perth club night"
+        "src": "/images/profile/au/ben-jam_kids-graduation-party.jpg",
+        "alt": "DJ doing his things for the kids"
       }
     }
   ],
   "links": [
-    { "icon": "/images/websites/beatport.png", "label": "Ben Jam", "url": "https://www.beatport.com/artist/ben-jam/76020" },
-    { "icon": "/images/websites/traxsource.png", "label": "Ben Jam", "url": "https://www.traxsource.com/artist/10654/ben-jam" },
-    { "icon": "/images/websites/beatport.png", "label": "Brain Kat", "url": "https://www.beatport.com/label/brain-kat-records/12720" },
-    { "icon": "/images/websites/apple.png", "label": "Ben Jam", "url": "https://music.apple.com/au/artist/ben-jam/1557713911" },
-    { "icon": "/images/websites/spotify.png", "label": "Ben Jam", "url": "https://open.spotify.com/artist/7f9JyCIf496FGO9BJ6KVVf" }
+    { "icon": "/images/websites/beatport.png", "label": "Ben Jam on BeatPort", "url": "https://www.beatport.com/artist/ben-jam/76020" },
+    { "icon": "/images/websites/traxsource.png", "label": "Ben Jam on Traxsource", "url": "https://www.traxsource.com/artist/10654/ben-jam" },
+    { "icon": "/images/websites/apple.png", "label": "Ben Jam on Apple Music", "url": "https://music.apple.com/au/artist/ben-jam/1557713911" },
+    { "icon": "/images/websites/spotify.png", "label": "Ben Jam on Spotify", "url": "https://open.spotify.com/artist/7f9JyCIf496FGO9BJ6KVVf" }, 
+    { "icon": "/images/websites/beatport.png", "label": "Brain Kat Records on BeatPort", "url": "https://www.beatport.com/label/brain-kat-records/12720" }
   ]
 }

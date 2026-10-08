@@ -1,15 +1,29 @@
 [
   {
-    "id": "spirit",
-    "title": "Spirit",
+    "id": "jam-house",
+    "title": "Jam House",
     "artist": "Ben Jam",
-    "coverImage": "https://f4.bcbits.com/img/a4039054508_5.jpg",
-    "buyUrl": "https://btothej.bandcamp.com/track/spirit",
-    "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=3433467247/size=large/bgcol=ffffff/linkcol=e99708/minimal=true/tracklist=false/transparent=true/",
+    "coverImage": "https://i1.sndcdn.com/avatars-8BoIjKJIMqJxtxmL-0ksE1A-t500x500.jpg",
+    "buyUrl": "https://soundcloud.com/ben-jam/jam-house",
+    "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2198444407&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "embedHeight": "313px",
+    "releaseDate": "2025",
+    "tags": ["Single"],
+    "detail": "Unreleased",
+    "duration": "6:54",
+    "accentColor": "#e99708"
+  },
+  {
+    "id": "right-girl-remix",
+    "title": "Right Girl (Ben Jam Remix)",
+    "artist": "Green George",
+    "coverImage": "https://i1.sndcdn.com/artworks-000074773863-faenn7-t500x500.jpg",
+    "buyUrl": "https://soundcloud.com/ben-jam/right-girl-b-to-the-j",
+    "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A141706545&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     "embedHeight": "313px",
     "releaseDate": "2026",
     "tags": ["Single"],
-    "detail": "Written & produced at So Funky Studios, Kensal Rise, London, UK. Dec 2000 - January 2001. Never officially released.",
+    "detail": "Unreleased, free download",
     "duration": "6:46",
     "accentColor": "#e99708"
   },
@@ -187,6 +201,20 @@
     "tags": ["Single"],
     "detail": "Fun House track.",
     "duration": "6:50",
+    "accentColor": "#e99708"
+  },
+  {
+    "id": "spirit",
+    "title": "Spirit",
+    "artist": "Ben Jam",
+    "coverImage": "https://f4.bcbits.com/img/a4039054508_5.jpg",
+    "buyUrl": "https://btothej.bandcamp.com/track/spirit",
+    "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=3433467247/size=large/bgcol=ffffff/linkcol=e99708/minimal=true/tracklist=false/transparent=true/",
+    "embedHeight": "313px",
+    "releaseDate": "2026",
+    "tags": ["Single"],
+    "detail": "Written & produced at So Funky Studios, Kensal Rise, London, UK. Dec 2000 - January 2001. Never officially released.",
+    "duration": "6:46",
     "accentColor": "#e99708"
   }
 ]

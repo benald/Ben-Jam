@@ -5,7 +5,7 @@ export default function Releases() {
     <ReleaseList
       endpoint="/api/releases"
       title="Releases"
-      subtitle="Released tracks & remixes."
+      subtitle="Released tracks & remixes, available on Bandcamp."
       playerType="bandcamp"
       columns={2}
     />
