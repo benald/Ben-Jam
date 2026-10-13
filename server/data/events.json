@@ -1,6 +1,6 @@
 [
   {
-    "id": "evt-009",
+    "id": "evt-008",
     "title": "Voices of House presents Junior Jack",
     "date": "09 MAR 2027",
     "venue": "The Harbour Bar",
@@ -9,18 +9,9 @@
     "eventUrl": ""
   },
   {
-    "id": "evt-008",
-    "title": "Mikaela's Belated Birthday",
-    "date": "2 NOV 2026",
-    "venue": "House Party",
-    "city": "Floreat, WA, AU",
-    "detail": "Ben Jam \u00b7 20:00\u201403:00",
-    "eventUrl": ""
-  },
-  {
     "id": "evt-007",
     "title": "Saskia & Harry's 21st",
-    "date": "17 OCT 2027",
+    "date": "17 OCT 2026",
     "venue": "The Scarborough Beach Bar",
     "city": "Scarborough, WA, AU",
     "detail": "Ben Jam \u00b7 22:00\u201401:00",
