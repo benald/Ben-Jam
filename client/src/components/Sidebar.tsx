@@ -135,32 +135,12 @@ export default function Sidebar() {
         </div>
       )}
 
-      {contact && (
-        <div className="bg-surface rounded-t-lg p-4 sm:p-5">
-          <h2 className="text-xs font-semibold uppercase tracking-wide text-muted mb-3">Audio sites</h2>
-          <div className="flex flex-col gap-2">
-            {contact.audios.map((s) => (
-              <a
-                key={s.url}
-                href={s.url}
-                target="_blank"
-                rel="noreferrer"
-                className="text-sm text-muted hover:text-accent transition-colors"
-              >
-                {s.label}
-              </a>
-            ))}
-          </div>
-        </div>
-      )}
-
       {bio && bio.links.length > 0 && (
         <div className="bg-surface rounded-t-lg p-4 sm:p-5">
           <h2 className="text-xs font-semibold uppercase tracking-wide text-muted mb-3">Buy or Stream</h2>
           <div className="flex flex-col gap-2">
             {bio.links.map((link) => (
-              <div key={link.url} className="flex items-center gap-2">
-                <img src={link.icon} alt={link.label} className="w-4 h-4 inline-block" />
+              <div key={link.url}>
                 <a
                   href={link.url}
                   target="_blank"

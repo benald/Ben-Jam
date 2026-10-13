@@ -6,7 +6,7 @@ const links = [
   { to: "/releases", label: "Releases" },
   { to: "/mixes", label: "Mixes" },
   { to: "/demos", label: "Demos" },
-  { to: "/label", label: "Record Label" },
+  { to: "/label", label: "Brain Kat Records" },
   { to: "/events", label: "Events" },
   { to: "/gallery", label: "Gallery" },
   { to: "/contact", label: "Contact" },
