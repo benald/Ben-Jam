@@ -89,4 +89,5 @@ export interface ContactSocial {
 export interface ContactInfo {
   email: string;
   socials: ContactSocial[];
+  audios: ContactSocial[];
 }
