@@ -28,19 +28,6 @@
     "accentColor": "#e99708"
   },
   {
-    "id": "another-day",
-    "title": "Another Day",
-    "artist": "Ben Jam",
-    "coverImage": "https://f4.bcbits.com/img/a0568070709_5.jpg",
-    "buyUrl": "https://btothej.bandcamp.com/track/another-day",
-    "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=818922458/size=large/bgcol=ffffff/linkcol=e99708/minimal=true/tracklist=false/transparent=true/",
-    "embedHeight": "313px",
-    "releaseDate": "2024",
-    "tags": ["Single"],
-    "duration": "6:12",
-    "accentColor": "#e99708"
-  },
-  {
     "id": "take-turns",
     "title": "Take Turns",
     "artist": "Ben Jam",
@@ -95,20 +82,6 @@
     "accentColor": "#e99708"
   },
   {
-    "id": "carnivale",
-    "title": "Carnivale",
-    "artist": "Ben Jam",
-    "coverImage": "https://f4.bcbits.com/img/a3712190639_5.jpg",
-    "buyUrl": "https://btothej.bandcamp.com/track/carnivale",
-    "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=1582874864/size=large/bgcol=ffffff/linkcol=e99708/minimal=true/tracklist=false/transparent=true/",
-    "embedHeight": "313px",
-    "releaseDate": "2021",
-    "tags": ["Single"],
-    "detail": "Fun time House track written & produced by B to the J.",
-    "duration": "7:21",
-    "accentColor": "#e99708"
-  },
-  {
     "id": "round-the-way-up",
     "title": "Round the way up",
     "artist": "Ben Jam",
@@ -145,20 +118,6 @@
     "releaseDate": "2021",
     "tags": ["Single"],
     "duration": "6:44",
-    "accentColor": "#e99708"
-  },
-  {
-    "id": "soul-deep",
-    "title": "Soul Deep",
-    "artist": "Ben Jam",
-    "coverImage": "https://f4.bcbits.com/img/a4215524752_5.jpg",
-    "buyUrl": "https://btothej.bandcamp.com/track/soul-deep",
-    "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=1223518546/size=large/bgcol=ffffff/linkcol=e99708/minimal=true/tracklist=false/transparent=true/",
-    "embedHeight": "313px",
-    "releaseDate": "2021",
-    "tags": ["Single"],
-    "detail": "In development for over 10 years, featuring the bass guitar talents of James Claringbold, Soul Deep is a solid House track with a live feel and jazzy undertones.",
-    "duration": "9:18",
     "accentColor": "#e99708"
   },
   {
