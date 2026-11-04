@@ -1,4 +1,43 @@
-[
+[  
+  {
+    "id": "soul-deep-original-mix",
+    "title": "Soul Deep",
+    "artist": "Ben Jam",
+    "coverImage": "https://f4.bcbits.com/img/a0256415704_2.jpg",
+    "buyUrl": "https://btothej.bandcamp.com/track/soul-deep",
+    "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=1223518546/size=large/bgcol=ffffff/linkcol=e99708/minimal=true/tracklist=false/transparent=true/",
+    "embedHeight": "313px",
+    "releaseDate": "2026",
+    "tags": ["Original Mix"],
+    "duration": "3:00",
+    "accentColor": "#e99708"
+  },
+  {
+    "id": "another-day-original-mix",
+    "title": "Another Day",
+    "artist": "Ben Jam",
+    "coverImage": "https://f4.bcbits.com/img/a1409758514_2.jpg",
+    "buyUrl": "https://btothej.bandcamp.com/track/another-day",
+    "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=818922458/size=large/bgcol=ffffff/linkcol=e99708/minimal=true/tracklist=false/transparent=true/",
+    "embedHeight": "313px",
+    "releaseDate": "2026",
+    "tags": ["Original Mix"],
+    "duration": "2:50",
+    "accentColor": "#e99708"
+  },
+  {
+    "id": "carnivale-original-mix",
+    "title": "Carnivale",
+    "artist": "Ben Jam",
+    "coverImage": "https://f4.bcbits.com/img/a3141385576_2.jpg",
+    "buyUrl": "https://btothej.bandcamp.com/track/carnivale",
+    "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=1582874864/size=large/bgcol=ffffff/linkcol=e99708/minimal=true/tracklist=false/transparent=true/",
+    "embedHeight": "313px",
+    "releaseDate": "2026",
+    "tags": ["Original Mix"],
+    "duration": "7:01",
+    "accentColor": "#e99708"
+  },
   {
     "id": "its-dedication-ben-jam-mix",
     "title": "It's Dedication (Ben Jam Mix)",
